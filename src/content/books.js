@@ -6,12 +6,12 @@ import precoAmanha from '@/images/books/o-preco-do-amanha.png';
 import precoAmanhaLateral from '@/images/books/o-preco-do-amanha-lateral.png';
 import teseAscencao from '@/images/books/a-tese-da-ascencao-do-bitcoin.png';
 import teseAscencaoLateral from '@/images/books/a-tese-da-ascencao-do-bitcoin-lateral.png';
-import tudoDividido21Milhoes from '@/images/books/tudo-dividido-por-21-milhoes-lateral.png';
+import tudoDividido21Milhoes from '@/images/books/tudo-dividido-por-21-milhoes.png';
 import tudoDividido21MilhoesLateral from '@/images/books/tudo-dividido-por-21-milhoes-lateral.png';
 import vinteUmaLicoes from '@/images/books/21-licoes.png';
 import vinteUmaLicoesLateral from '@/images/books/21-licoes-lateral.png';
 
-export default books = [
+const books = [
   {
     title: '21 Lições',
     description: [
@@ -104,3 +104,5 @@ export default books = [
     lateralCover: tudoDividido21MilhoesLateral,
   },
 ];
+
+export default books
