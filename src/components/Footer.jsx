@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
+import { Socials } from '@/components/Socials';
 import logo from '@/images/monstera-books-logo-white.png';
 
 export function Footer() {
@@ -18,7 +19,7 @@ export function Footer() {
           </div>
         </div>
         <div className='flex flex-col justify-center md:items-end gap-8'>
-          <p>socials</p>
+          <Socials variant='secondary'/>
           <Button
             variant='secondary'
             href='https://shop.freemadeira.org/collections/monstera-books'
@@ -29,4 +30,4 @@ export function Footer() {
       </Container>
     </nav>
   );
-};
+}

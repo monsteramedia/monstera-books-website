@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
-const tailwindConfig = {
+export default {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,8 +8,9 @@ const tailwindConfig = {
   theme: {
     extend: {
       colors: {
-        white: 'var(--white)',
-        black: 'var(--black)',
+        black: '#171717',
+        salmon: '#F0776E',
+        green: '#0E3C3C',
       },
       borderWidth: {
         3: '3px',
@@ -19,5 +19,3 @@ const tailwindConfig = {
   },
   plugins: [],
 };
-
-export default tailwindConfig;
