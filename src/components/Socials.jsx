@@ -23,7 +23,10 @@ export function Socials({ variant }) {
         href={network.href}
         target='_blank'
         rel='noreferrer'
-        className={classNames('p-2 rounded-full transition-color duration-500', colorStyle)}
+        className={classNames(
+          'p-2 rounded-full transition-color duration-500',
+          colorStyle
+        )}
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -40,11 +43,12 @@ export function Socials({ variant }) {
   };
 
   return (
-    <div className='flex items-end space-x-4 mt-2'>
+    <div className='flex items-center justify-center space-x-4'>
       <SocialIcon social='x' />
       <SocialIcon social='nostr' />
       <SocialIcon social='instagram' />
       <SocialIcon social='linkedin' />
+      <SocialIcon social='email' />
     </div>
   );
 }
