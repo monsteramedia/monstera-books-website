@@ -24,6 +24,7 @@ const books = [
     ],
     cover: vinteUmaLicoes,
     lateralCover: vinteUmaLicoesLateral,
+    storeUrl: 'https://shop.freemadeira.org/products/21-licoes',
   },
   {
     title: 'Graças a Deus pelo Bitcoin',
@@ -43,6 +44,8 @@ const books = [
     ],
     cover: gracasADeus,
     lateralCover: gracasADeusLateral,
+    storeUrl:
+      'https://shop.freemadeira.org/products/gracas-a-deus-pelo-bitcoin',
   },
   {
     title: 'A Tese da Ascensão do Bitcoin',
@@ -55,6 +58,8 @@ const books = [
     ],
     cover: teseAscencao,
     lateralCover: teseAscencaoLateral,
+    storeUrl:
+      'https://shop.freemadeira.org/products/a-tese-da-ascensao-do-bitcoin',
   },
   {
     title: 'O Preço do Amanhã',
@@ -68,6 +73,7 @@ const books = [
     ],
     cover: precoAmanha,
     lateralCover: precoAmanhaLateral,
+    storeUrl: 'https://shop.freemadeira.org/products/o-preco-do-amanha',
   },
   {
     title: 'Para Além da Democracia',
@@ -86,6 +92,7 @@ const books = [
     ],
     cover: alemDaDemocracia,
     lateralCover: alemDaDemocraciaLateral,
+    storeUrl: 'https://shop.freemadeira.org/products/para-alem-da-democracia',
   },
   {
     title: 'Tudo Dividido por 21 Milhões',
@@ -102,6 +109,8 @@ const books = [
     ],
     cover: tudoDividido21Milhoes,
     lateralCover: tudoDividido21MilhoesLateral,
+    storeUrl:
+      'https://shop.freemadeira.org/products/bitcoin-tudo-dividido-por-21-milhoes',
   },
 ];
 
