@@ -12,3 +12,13 @@ body {
   background: var(--white);
   font-family: 'Roboto', sans-serif;
 }
+
+/* Hide the scrollbar while still allowing the content to scroll */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
