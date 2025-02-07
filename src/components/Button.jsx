@@ -15,7 +15,7 @@ export const Button = ({ href, className, variant, ...props }) => {
   }
 
   className = classNames(
-    'border border-2 font-semibold py-2 px-8 rounded-md transition-colors duration-500',
+    'border border-2 font-semibold py-2 px-8 rounded-md transition-colors duration-500 shadow-md',
     className,
     buttonColorStyle
   );

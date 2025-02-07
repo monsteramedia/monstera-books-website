@@ -43,7 +43,7 @@ export function Socials({ variant }) {
   };
 
   return (
-    <div className='flex items-center justify-center space-x-4'>
+    <div className='flex items-center justify-center space-x-2 lg:space-x-4'>
       <SocialIcon social='x' />
       <SocialIcon social='nostr' />
       <SocialIcon social='instagram' />
