@@ -1,18 +1,19 @@
-import alemDaDemocracia from '@/images/books/para-alem-da-democracia.png';
+import alemDaDemocracia from '@/images/books/para-alem-da-democracia.jpg';
 import alemDaDemocraciaLateral from '@/images/books/para-alem-da-democracia-lateral.png';
-import gracasADeus from '@/images/books/gracas-a-deus-pelo-bitcoin.png';
+import gracasADeus from '@/images/books/gracas-a-deus-pelo-bitcoin.jpg';
 import gracasADeusLateral from '@/images/books/gracas-a-deus-pelo-bitcoin-lateral.png';
-import precoAmanha from '@/images/books/o-preco-do-amanha.png';
+import precoAmanha from '@/images/books/o-preco-do-amanha.jpg';
 import precoAmanhaLateral from '@/images/books/o-preco-do-amanha-lateral.png';
-import teseAscencao from '@/images/books/a-tese-da-ascencao-do-bitcoin.png';
+import teseAscencao from '@/images/books/a-tese-da-ascencao-do-bitcoin.jpg';
 import teseAscencaoLateral from '@/images/books/a-tese-da-ascencao-do-bitcoin-lateral.png';
-import tudoDividido21Milhoes from '@/images/books/tudo-dividido-por-21-milhoes.png';
+import tudoDividido21Milhoes from '@/images/books/tudo-dividido-por-21-milhoes.jpg';
 import tudoDividido21MilhoesLateral from '@/images/books/tudo-dividido-por-21-milhoes-lateral.png';
-import vinteUmaLicoes from '@/images/books/21-licoes.png';
+import vinteUmaLicoes from '@/images/books/21-licoes.jpg';
 import vinteUmaLicoesLateral from '@/images/books/21-licoes-lateral.png';
 
 const books = [
   {
+    id: 1,
     title: '21 Lições',
     description: [
       '**O que é Bitcoin?** Esta pergunta inócua é surpreendentemente difícil de responder. Bitcoin é uma rede informática, uma nova forma de dinheiro, um sistema de pagamento resistente à censura, uma revolução financeira, uma forma pacífica de protesto, e muito mais.',
@@ -27,6 +28,7 @@ const books = [
     storeUrl: 'https://shop.freemadeira.org/products/21-licoes',
   },
   {
+    id: 2,
     title: 'Graças a Deus pelo Bitcoin',
     description: [
       'O dinheiro faz parte do nosso dia-a-dia. Ganhamo-lo, gastamo-lo e poupamo-lo. Veneramo-lo e confiamos nele para suprir as nossas necessidades. Embora muito já tenha sido escrito sobre o poder, o perigo e a gestão do dinheiro, pouco foi ainda escrito sobre o que ele é, bem como da sua moralidade. Essa lacuna de informação tem sido aproveitada para enriquecer alguns privilegiados, escravizar milhões e introduzir desordem e divisão em todo o mundo. Como é que isto aconteceu e o que podemos fazer para o remediar?',
@@ -48,6 +50,7 @@ const books = [
       'https://shop.freemadeira.org/products/gracas-a-deus-pelo-bitcoin',
   },
   {
+    id: 3,
     title: 'A Tese da Ascensão do Bitcoin',
     description: [
       '**A Tese da Ascensão do Bitcoin** é uma leitura informativa e cativante, tanto para o recém-chegado como para o entusiasta de longa data do Bitcoin. Boyapati faz um caso convincente para o Bitcoin através de uma rápida visita ao cenário histórico do dinheiro, às propriedades de diferentes tipos de dinheiro e à razão pela qual o Bitcoin é a melhor forma de dinheiro e reserva de valor do mundo, potencialmente destinada a deslocar todas as outras.',
@@ -62,6 +65,7 @@ const books = [
       'https://shop.freemadeira.org/products/a-tese-da-ascensao-do-bitcoin',
   },
   {
+    id: 4,
     title: 'O Preço do Amanhã',
     description: [
       '**Vivemos numa época extraordinária.** Os avanços tecnológicos estão a acontecer mais depressa do que a nossa capacidade para os compreender e, num mundo que está a avançar a um ritmo mais rápido do que podemos imaginar, não nos podemos dar ao luxo de ficar parados.',
@@ -76,6 +80,7 @@ const books = [
     storeUrl: 'https://shop.freemadeira.org/products/o-preco-do-amanha',
   },
   {
+    id: 5,
     title: 'Para Além da Democracia',
     description: [
       '"Acabei de o ler. Excelente. Ótimo trabalho. Parabéns." Hans-Hermann Hoppe, autor de "Democracia: O Deus Que Falhou"',
@@ -95,6 +100,7 @@ const books = [
     storeUrl: 'https://shop.freemadeira.org/products/para-alem-da-democracia',
   },
   {
+    id: 6,
     title: 'Tudo Dividido por 21 Milhões',
     description: [
       'Estamos todos acorrentados à seta implacável do tempo. Nascemos, vivemos e envelhecemos. Pelo menos é isso que esperamos que aconteça. Depois morremos.',
