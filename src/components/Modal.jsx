@@ -10,12 +10,11 @@ export function Modal({ book, show, setShow }) {
         transition
         className='fixed inset-0 bg-grey/75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in'
       />
-
       <div className='fixed inset-0 z-10 w-screen'>
-        <div className='flex min-h-full items-center justify-center p-4 sm:items-center'>
+        <div className='flex min-h-full items-end justify-center sm:items-center'>
           <DialogPanel
             transition
-            className='relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 h-[80vh] sm:w-full sm:max-w-5xl sm:p-6 data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95'
+            className='relative transform overflow-hidden rounded-t-lg bg-white p-5 shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 h-[80vh] sm:w-full sm:max-w-5xl sm:p-6 data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95'
           >
             <div className='flex flex-col sm:flex-row gap-8 justify-center items-center h-full'>
               <div className='flex flex-col items-center justify-center h-full hidden sm:flex'>
@@ -28,10 +27,10 @@ export function Modal({ book, show, setShow }) {
                   Comprar
                 </Button>
               </div>
-              <div className='flex flex-col space-y-2 h-full overflow-y-auto scrollbar-hide'>
+              <div className='flex flex-col grow space-y-2 h-full overflow-y-auto scrollbar-hide'>
                 <DialogTitle
                   as='h3'
-                  className='sticky top-0 bg-white text-xl font-semibold py-4 w-full text-center'
+                  className='sticky top-0 bg-white text-xl font-semibold py-4 w-full text-center border border-white'
                 >
                   {book.title}
                 </DialogTitle>
@@ -59,11 +58,13 @@ export function Modal({ book, show, setShow }) {
                     <ReactMarkdown>{description}</ReactMarkdown>
                   </div>
                 ))}
+                <div className='w-full flex items-center justify-center text-center sticky bottom-0 bg-white sm:hidden pt-5 sm:pt-6 border border-white'>
+                  <Button href={book.storeUrl} className='w-full'>
+                    Comprar
+                  </Button>
+                </div>
               </div>
             </div>
-              <div className='w-full flex items-center justify-center text-center sticky bottom-0 bg-white sm:hidden pt-4'>
-                <Button href={book.storeUrl}>Comprar</Button>
-              </div>
           </DialogPanel>
         </div>
       </div>
