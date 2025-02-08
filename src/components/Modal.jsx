@@ -48,23 +48,22 @@ export function Modal({ book, show, setShow }) {
                     <ReactMarkdown>{description}</ReactMarkdown>
                   </div>
                 ))}
-                <p className='text-base font-medium pt-8 pb-4 text-center'>Sobre o autor</p>
+                <p className='text-base font-medium pt-8 pb-4 text-center'>
+                  Sobre o autor
+                </p>
                 {book.authorDescription.map((description, index) => (
                   <div
                     key={`author-${index}`}
-                    className='text-sm font-light text-grey text-justify last:mb-8'
+                    className='text-sm font-light text-grey text-justify'
                   >
                     <ReactMarkdown>{description}</ReactMarkdown>
                   </div>
                 ))}
-                <Button
-                  href={book.storeUrl}
-                  className='w-full text-center sticky bottom-0 bg-white sm:hidden'
-                >
-                  Comprar
-                </Button>
               </div>
             </div>
+              <div className='w-full flex items-center justify-center text-center sticky bottom-0 bg-white sm:hidden pt-4'>
+                <Button href={book.storeUrl}>Comprar</Button>
+              </div>
           </DialogPanel>
         </div>
       </div>
