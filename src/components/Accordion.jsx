@@ -1,9 +1,8 @@
 'use client';
-
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 import { classNames } from '@/utils/functions';
-
 import books from '@/content/books';
 import { Modal } from './Modal';
 
@@ -22,26 +21,54 @@ export function Accordion({className}) {
   };
 
   const ImageAccordionItem = ({ book, onClick }) => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        onClick();
+      }
+    };
+
     return (
-      <div className='flex hover:cursor-pointer h-full' onClick={onClick}>
-        <Image
-          src={book.cover}
-          alt={book.title}
-          className={classNames(
-            'overflow-x-hidden h-full w-auto shadow-sm',
-            `${book.id === hoveredBook.id ? 'block' : 'hidden'}`
+      <button
+        type='button'
+        className='flex hover:cursor-pointer h-full'
+        onClick={onClick}
+        onKeyDown={handleKeyDown}
+      >
+        <AnimatePresence>
+          {book.id === hoveredBook.id ? (
+            <motion.div
+              key='cover'
+              initial={{ x: '-5%', opacity: 0.85 }}
+              animate={{ x: '0%', opacity: 1 }}
+              exit={{ x: '5%', opacity: 0.85 }}
+              transition={{ duration: 0.5 }}
+              className='overflow-x-hidden h-full w-auto shadow-sm border border-slate-100/50'
+            >
+              <Image
+                src={book.cover}
+                alt={book.title}
+                className='h-full w-auto'
+              />
+            </motion.div>
+          ) : (
+            <motion.div
+              key='lateralCover'
+              initial={{ x: '5%', opacity: 0.85 }}
+              animate={{ x: '0%', opacity: 1 }}
+              exit={{ x: '-5%', opacity: 0.85 }}
+              transition={{ duration: 0.5 }}
+              className='overflow-x-hidden h-full w-auto shadow-sm border border-slate-100/50'
+            >
+              <Image
+                onMouseEnter={() => setHoveredBook(book)}
+                src={book.lateralCover}
+                alt={book.title}
+                className='h-full w-auto'
+              />
+            </motion.div>
           )}
-        />
-        <Image
-          onMouseEnter={() => setHoveredBook(book)}
-          src={book.lateralCover}
-          alt={book.title}
-          className={classNames(
-            'overflow-x-hidden h-full w-auto shadow-sm',
-            `${book.id === hoveredBook.id ? 'hidden' : 'block'}`
-          )}
-        />
-      </div>
+        </AnimatePresence>
+      </button>
     );
   };
 
