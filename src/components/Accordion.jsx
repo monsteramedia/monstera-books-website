@@ -7,7 +7,7 @@ import { classNames } from '@/utils/functions';
 import books from '@/content/books';
 import { Modal } from './Modal';
 
-export function Accordion() {
+export function Accordion({className}) {
   const [selectedBook, setSelectedBook] = useState(
     books.find((book) => book.id === 1)
   );
@@ -21,10 +21,7 @@ export function Accordion() {
     setShowModal(true);
   };
 
-  const ImageAccordionItem = ({
-    book,
-    onClick,
-  }) => {
+  const ImageAccordionItem = ({ book, onClick }) => {
     return (
       <div className='flex hover:cursor-pointer h-full' onClick={onClick}>
         <Image
@@ -32,7 +29,7 @@ export function Accordion() {
           alt={book.title}
           className={classNames(
             'overflow-x-hidden h-full w-auto shadow-sm',
-            `${book.id === hoveredBook.id ? 'block' : 'hidden'}`,
+            `${book.id === hoveredBook.id ? 'block' : 'hidden'}`
           )}
         />
         <Image
@@ -41,7 +38,7 @@ export function Accordion() {
           alt={book.title}
           className={classNames(
             'overflow-x-hidden h-full w-auto shadow-sm',
-            `${book.id === hoveredBook.id ? 'hidden' : 'block'}`,
+            `${book.id === hoveredBook.id ? 'hidden' : 'block'}`
           )}
         />
       </div>
@@ -63,7 +60,12 @@ export function Accordion() {
   };
 
   return (
-    <div className='h-[calc(100vh-144px)] mx-auto flex items-center justify-center'>
+    <div
+      className={classNames(
+        'h-[calc(100vh-144px)] mx-auto flex items-center justify-center',
+        className
+      )}
+    >
       <ImageAccordion />
       <Modal book={selectedBook} show={showModal} setShow={setShowModal} />
     </div>
