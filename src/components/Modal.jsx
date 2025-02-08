@@ -28,17 +28,17 @@ export function Modal({ book, show, setShow }) {
                   Comprar
                 </Button>
               </div>
-              <div className='flex flex-col items-center text-center space-y-2 h-full overflow-y-auto scrollbar-hide'>
+              <div className='flex flex-col space-y-2 h-full overflow-y-auto scrollbar-hide'>
                 <DialogTitle
                   as='h3'
-                  className='sticky top-0 bg-white text-xl font-semibold py-4 w-full'
+                  className='sticky top-0 bg-white text-xl font-semibold py-4 w-full text-center'
                 >
                   {book.title}
                 </DialogTitle>
                 <Image
                   src={book.cover}
                   alt={book.title}
-                  className='max-w-40 block sm:hidden pb-8'
+                  className='max-w-40 block sm:hidden pb-8 mx-auto'
                 />
                 {book.description.map((description, index) => (
                   <div
@@ -48,7 +48,7 @@ export function Modal({ book, show, setShow }) {
                     <ReactMarkdown>{description}</ReactMarkdown>
                   </div>
                 ))}
-                <p className='text-base font-medium pt-8 pb-4'>Sobre o autor</p>
+                <p className='text-base font-medium pt-8 pb-4 text-center'>Sobre o autor</p>
                 {book.authorDescription.map((description, index) => (
                   <div
                     key={`author-${index}`}

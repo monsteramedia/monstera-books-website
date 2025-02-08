@@ -8,8 +8,12 @@ import books from '@/content/books';
 import { Modal } from './Modal';
 
 export function Accordion() {
-  const [selectedBook, setSelectedBook] = useState(books[0]);
-  const [isHovered, setIsHovered] = useState(false);
+  const [selectedBook, setSelectedBook] = useState(
+    books.find((book) => book.id === 1)
+  );
+  const [hoveredBook, setHoveredBook] = useState(
+    books.find((book) => book.id === 1)
+  );
   const [showModal, setShowModal] = useState(false);
 
   const ImageAccordionClick = (book) => {
@@ -18,60 +22,26 @@ export function Accordion() {
   };
 
   const ImageAccordionItem = ({
-    index,
-    coverSrc,
-    lateralSrc,
-    altText,
+    book,
     onClick,
   }) => {
-
     return (
-      <div
-        className='flex group hover:cursor-pointer'
-        onClick={onClick}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
+      <div className='flex hover:cursor-pointer h-full' onClick={onClick}>
         <Image
-          src={coverSrc}
-          alt={altText}
+          src={book.cover}
+          alt={book.title}
           className={classNames(
-            'overflow-x-hidden h-[calc(100vh-144px)]',
-            `${
-              index === 0
-                ? isHovered
-                  ? 'hidden'
-                  : 'block'
-                : 'hidden'
-            }`,
-            `${
-              index === 0
-                ? isHovered
-                  ? 'group-hover:block'
-                  : 'group-hover:hidden'
-                : 'group-hover:block'
-            }`
+            'overflow-x-hidden h-full w-auto shadow-sm',
+            `${book.id === hoveredBook.id ? 'block' : 'hidden'}`,
           )}
         />
         <Image
-          src={lateralSrc}
-          alt={altText}
+          onMouseEnter={() => setHoveredBook(book)}
+          src={book.lateralCover}
+          alt={book.title}
           className={classNames(
-            'overflow-x-hidden h-[calc(100vh-144px)]',
-            `${
-              index === 0
-                ? isHovered
-                  ? 'block'
-                  : 'hidden'
-                : 'block'
-            }`,
-            `${
-              index === 0
-                ? isHovered
-                  ? 'group-hover:hidden'
-                  : 'group-hover:block'
-                : 'group-hover:hidden'
-            }`
+            'overflow-x-hidden h-full w-auto shadow-sm',
+            `${book.id === hoveredBook.id ? 'hidden' : 'block'}`,
           )}
         />
       </div>
@@ -80,23 +50,20 @@ export function Accordion() {
 
   const ImageAccordion = () => {
     return (
-      <div className='flex h-9/12 w-2/3'>
-        {books.map((book, index) => (
+      <>
+        {books.map((book) => (
           <ImageAccordionItem
-            key={index}
-            index={index}
-            coverSrc={book.cover}
-            lateralSrc={book.lateralCover}
-            altText={book.title}
+            key={`accordion-${book.id}`}
+            book={book}
             onClick={() => ImageAccordionClick(book)}
           />
         ))}
-      </div>
+      </>
     );
   };
 
   return (
-    <div className='h-[calc(100vh-144px)] mx-auto w-screen flex items-center justify-center'>
+    <div className='h-[calc(100vh-144px)] mx-auto flex items-center justify-center'>
       <ImageAccordion />
       <Modal book={selectedBook} show={showModal} setShow={setShowModal} />
     </div>
