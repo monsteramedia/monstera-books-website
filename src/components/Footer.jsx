@@ -1,8 +1,8 @@
 import Image from 'next/image';
+import logo from '@/images/monstera-logo.svg';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
 import { Socials } from '@/components/Socials';
-import logo from '@/images/monstera-logo.svg';
 
 export function Footer() {
   return (

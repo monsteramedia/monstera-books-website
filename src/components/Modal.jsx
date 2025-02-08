@@ -1,7 +1,12 @@
-import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
-import { Button } from './Button'
-import Image from 'next/image'
+import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
+import {
+  Dialog,
+  DialogBackdrop,
+  DialogPanel,
+  DialogTitle,
+} from '@headlessui/react';
+import { Button } from './Button';
 
 export function Modal({ book, show, setShow }) {
   return (

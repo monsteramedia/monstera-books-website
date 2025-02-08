@@ -1,7 +1,7 @@
 import Image from "next/image";
+import freeMadeira from '@/images/free-madeira-monstera-books.avif';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
-import freeMadeira from '@/images/free-madeira-monstera-books.avif';
 
 export function FreeMadeiraPartnership() {
   return (

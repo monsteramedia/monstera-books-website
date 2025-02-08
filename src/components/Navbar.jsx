@@ -1,7 +1,7 @@
 import Image from 'next/image';
+import logo from '@/images/monstera-logo.svg';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
-import logo from '@/images/monstera-logo.svg';
 
 export function Navbar() {
   return (

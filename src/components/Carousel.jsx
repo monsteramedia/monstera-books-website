@@ -1,10 +1,10 @@
 'use client';
-import { classNames } from '@/utils/functions';
 import React, { useState, useEffect } from 'react';
-import books from '@/content/books';
 import Image from 'next/image';
-import { Modal } from './Modal';
 import { motion } from 'framer-motion';
+import { classNames } from '@/utils/functions';
+import books from '@/content/books';
+import { Modal } from './Modal';
 
 export function Carousel({className}) {
   const [selectedBook, setSelectedBook] = useState(

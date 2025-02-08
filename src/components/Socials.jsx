@@ -1,6 +1,6 @@
-import socials from '@/content/socials';
 import Link from 'next/link';
 import { classNames } from '@/utils/functions';
+import socials from '@/content/socials';
 
 export function Socials({ variant }) {
   let colorStyle = 'bg-black/85 hover:bg-black';
