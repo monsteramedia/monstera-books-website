@@ -6,7 +6,7 @@ import { classNames } from '@/utils/functions';
 import books from '@/content/books';
 import { Modal } from './Modal';
 
-export function Accordion({className}) {
+export function Accordion({ className }) {
   const [selectedBook, setSelectedBook] = useState(
     books.find((book) => book.id === 1)
   );
@@ -35,38 +35,35 @@ export function Accordion({className}) {
         onKeyDown={handleKeyDown}
       >
         <AnimatePresence>
-          {book.id === hoveredBook.id ? (
-            <motion.div
-              key='cover'
-              initial={{ x: '-5%', opacity: 0.85 }}
-              animate={{ x: '0%', opacity: 1 }}
-              exit={{ x: '5%', opacity: 0.85 }}
-              transition={{ duration: 0.5 }}
-              className='overflow-x-hidden h-full w-auto shadow-sm border border-slate-100/50'
-            >
-              <Image
-                src={book.cover}
-                alt={book.title}
-                className='h-full w-auto'
-              />
-            </motion.div>
-          ) : (
-            <motion.div
-              key='lateralCover'
-              initial={{ x: '5%', opacity: 0.85 }}
-              animate={{ x: '0%', opacity: 1 }}
-              exit={{ x: '-5%', opacity: 0.85 }}
-              transition={{ duration: 0.5 }}
-              className='overflow-x-hidden h-full w-auto shadow-sm border border-slate-100/50'
-            >
-              <Image
-                onMouseEnter={() => setHoveredBook(book)}
-                src={book.lateralCover}
-                alt={book.title}
-                className='h-full w-auto'
-              />
-            </motion.div>
-          )}
+          <motion.div
+            key='cover'
+            initial={{ width: 0 }}
+            animate={{ width: book.id === hoveredBook.id ? 'auto' : 0 }}
+            exit={{ width: 0 }}
+            transition={{ duration: 0.5 }}
+            className='overflow-x-hidden h-full w-auto shadow-sm border border-slate-100/50'
+          >
+            <Image
+              src={book.cover}
+              alt={book.title}
+              className='h-full w-auto'
+            />
+          </motion.div>
+          <motion.div
+            key='lateralCover'
+            initial={{ width: 'auto' }}
+            animate={{ width: book.id === hoveredBook.id ? 0 : 'auto' }}
+            exit={{ width: 'auto' }}
+            transition={{ duration: 0.5 }}
+            className='overflow-x-hidden h-full w-auto shadow-sm border border-slate-100/50'
+          >
+            <Image
+              onMouseEnter={() => setHoveredBook(book)}
+              src={book.lateralCover}
+              alt={book.title}
+              className='h-full w-auto'
+            />
+          </motion.div>
         </AnimatePresence>
       </button>
     );
@@ -74,7 +71,7 @@ export function Accordion({className}) {
 
   const ImageAccordion = () => {
     return (
-      <>
+      <div className='h-[calc(95vh-144px)] mx-auto flex items-center justify-center'>
         {books.map((book) => (
           <ImageAccordionItem
             key={`accordion-${book.id}`}
@@ -82,7 +79,7 @@ export function Accordion({className}) {
             onClick={() => ImageAccordionClick(book)}
           />
         ))}
-      </>
+      </div>
     );
   };
 
