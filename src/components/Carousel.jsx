@@ -37,7 +37,7 @@ export function Carousel({className}) {
       )}
     >
       <motion.div
-      className='h-full'
+        className='h-full'
         animate={{ x }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       >

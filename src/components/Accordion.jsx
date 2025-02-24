@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
 import { classNames } from '@/utils/functions';
 import books from '@/content/books';
 import { Modal } from './Modal';
@@ -34,13 +33,9 @@ export function Accordion({ className }) {
         onClick={onClick}
         onKeyDown={handleKeyDown}
       >
-        <AnimatePresence>
-          <motion.div
-            key='cover'
-            initial={{ width: 0 }}
-            animate={{ width: book.id === hoveredBook.id ? 'auto' : 0 }}
-            exit={{ width: 0 }}
-            transition={{ duration: 0.5 }}
+        {hoveredBook.id === book.id ? (
+          <div
+            key={`cover-${book.id}`}
             className='overflow-x-hidden h-full w-auto shadow-sm border border-slate-100/50'
           >
             <Image
@@ -48,13 +43,10 @@ export function Accordion({ className }) {
               alt={book.title}
               className='h-full w-auto'
             />
-          </motion.div>
-          <motion.div
-            key='lateralCover'
-            initial={{ width: 'auto' }}
-            animate={{ width: book.id === hoveredBook.id ? 0 : 'auto' }}
-            exit={{ width: 'auto' }}
-            transition={{ duration: 0.5 }}
+          </div>
+        ) : (
+          <div
+            key={`lateralCover-${book.id}`}
             className='overflow-x-hidden h-full w-auto shadow-sm border border-slate-100/50'
           >
             <Image
@@ -63,8 +55,8 @@ export function Accordion({ className }) {
               alt={book.title}
               className='h-full w-auto'
             />
-          </motion.div>
-        </AnimatePresence>
+          </div>
+        )}
       </button>
     );
   };

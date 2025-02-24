@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Accordion className='hidden md:flex' />
-      <Carousel className='block md:hidden' />
+      {/* <Accordion className='hidden md:flex' /> */}
+      <Carousel />
       <FreeMadeiraPartnership />
       <Footer />
     </>
