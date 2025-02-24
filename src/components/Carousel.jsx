@@ -29,6 +29,12 @@ export function Carousel({className}) {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      onClick();
+    }
+  };
+
   return (
     <div
       className={classNames(
@@ -37,18 +43,25 @@ export function Carousel({className}) {
       )}
     >
       <motion.div
+        key='carousel'
         className='h-full'
         animate={{ x }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       >
         {books.map((book) => (
-          <Image
+          <button
             key={book.id}
-            src={book.cover}
-            alt={book.title}
-            className={classNames('inline-block h-full w-auto shadow-sm')}
+            type='button'
             onClick={() => ImageAccordionClick(book)}
-          />
+            onKeyDown={handleKeyDown}
+            className={classNames('inline-block h-full w-auto shadow-sm')}
+          >
+            <Image
+              src={book.cover}
+              alt={book.title}
+              className={classNames('inline-block h-full w-auto shadow-sm')}
+            />
+          </button>
         ))}
       </motion.div>
       <Modal book={selectedBook} show={showModal} setShow={setShowModal} />
