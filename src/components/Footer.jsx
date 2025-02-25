@@ -22,7 +22,7 @@ export function Footer() {
           <Socials variant='secondary' />
           <div className='flex items-center justify-center'>
             <Button
-              variant='secondary'
+              variant='secondaryWhite'
               href='https://shop.freemadeira.org/collections/monstera-books'
             >
               LOJA

@@ -23,6 +23,7 @@ export function FreeMadeiraPartnership() {
       <Button
         href='https://shop.freemadeira.org/collections/monstera-books'
         className='mt-4'
+        variant='secondary'
       >
         LOJA
       </Button>

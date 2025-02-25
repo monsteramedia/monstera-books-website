@@ -26,10 +26,20 @@ export function Modal({ book, show, setShow }) {
                 <Image
                   src={book.cover}
                   alt={book.title}
-                  className='min-w-56 mb-4'
+                  className='min-w-56 mb-4 max-w-32'
                 />
-                <Button href={book.storeUrl} className='w-full text-center'>
-                  Comprar
+                <Button
+                  href={book.storeUrl}
+                  className='w-full text-center mb-3'
+                >
+                  Loja FREE x Monstera
+                </Button>
+                <Button
+                  href={book.amazonUrl}
+                  className='w-full text-center'
+                  variant='secondary'
+                >
+                  Amazon
                 </Button>
               </div>
               <div className='flex flex-col grow space-y-2 h-full overflow-y-auto scrollbar-hide'>
@@ -63,9 +73,16 @@ export function Modal({ book, show, setShow }) {
                     <ReactMarkdown>{description}</ReactMarkdown>
                   </div>
                 ))}
-                <div className='w-full flex items-center justify-center text-center sticky bottom-0 bg-white sm:hidden pt-5 sm:pt-6 border border-white'>
+                <div className='w-full flex flex-col gap-3 items-center justify-center text-center sticky bottom-0 bg-white sm:hidden pt-5 sm:pt-6 border border-white'>
                   <Button href={book.storeUrl} className='w-full'>
-                    Comprar
+                    Loja FREE x Monstera
+                  </Button>
+                  <Button
+                    href={book.amazonUrl}
+                    className='w-full'
+                    variant='secondary'
+                  >
+                    Amazon
                   </Button>
                 </div>
               </div>
