@@ -99,7 +99,10 @@ export function Carousel({ className }) {
               setSelectedBook(book);
             }}
             onKeyDown={(event) => handleKeyDown(event, book)}
-            className={classNames('inline-block h-full w-auto shadow-sm')}
+            className={classNames(
+              'inline-block h-full w-auto shadow-sm',
+              isDown ? 'cursor-grabbing' : 'cursor-grab',
+            )}
           >
             <Image
               src={book.cover}

@@ -45,7 +45,7 @@ export function Socials({ variant }) {
   return (
     <div className='flex items-center justify-center space-x-2 lg:space-x-4'>
       <SocialIcon social='x' />
-      <SocialIcon social='nostr' />
+      {/* <SocialIcon social='nostr' /> */}
       <SocialIcon social='instagram' />
       <SocialIcon social='linkedin' />
       <SocialIcon social='email' />
