@@ -8,45 +8,6 @@ import vinteUmaLicoes from '@/images/books/21-licoes.jpg';
 const books = [
   {
     id: 1,
-    title: '21 Lições',
-    description: [
-      '**O que é Bitcoin?** Esta pergunta inócua é surpreendentemente difícil de responder. Bitcoin é uma rede informática, uma nova forma de dinheiro, um sistema de pagamento resistente à censura, uma revolução financeira, uma forma pacífica de protesto, e muito mais.',
-      'Mas este livro não procura responder a essa pergunta. Tenta, sim, responder a outra pergunta, mais pessoal: **O que aprendi eu com Bitcoin?**',
-      'As **21 Lições** estão estruturadas em grupos de sete, resultando em três capítulos. Cada um analisa a Bitcoin por uma lente diferente, extraindo as que podem ser aprendidas através da inspeção desta estranha rede a partir de um ângulo diferente.',
-    ],
-    authorDescription: [
-      'Gigi é um bitcoiner e engenheiro de software, escreve palavras e código para Bitcoin. O seu primeiro livro, 21 Lições, é um dos livros mais recomendados entre os bitcoiners. Lançou vários projectos no espaço Bitcoin e está actualmente a trabalhar no seu segundo livro, 21 Ways. O seu foco principal é a privacidade, segurança, software livre, e educação.',
-    ],
-    cover: vinteUmaLicoes,
-    storeUrl: 'https://shop.freemadeira.org/products/21-licoes',
-    amazonUrl:
-      'https://www.amazon.es/dp/B0DTPG36QL?ref=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&ref_=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&social_share=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&bestFormat=true',
-  },
-  {
-    id: 2,
-    title: 'Graças a Deus pelo Bitcoin',
-    description: [
-      'O dinheiro faz parte do nosso dia-a-dia. Ganhamo-lo, gastamo-lo e poupamo-lo. Veneramo-lo e confiamos nele para suprir as nossas necessidades. Embora muito já tenha sido escrito sobre o poder, o perigo e a gestão do dinheiro, pouco foi ainda escrito sobre o que ele é, bem como da sua moralidade. Essa lacuna de informação tem sido aproveitada para enriquecer alguns privilegiados, escravizar milhões e introduzir desordem e divisão em todo o mundo. Como é que isto aconteceu e o que podemos fazer para o remediar?',
-      '**Graças a Deus pelo Bitcoin** analisa as formas pelas quais o sistema monetário atual se encontra quebrado e o que pode ser feito para consertá-lo. Este trabalho examina a criação de dinheiro e a sua corrupção e potencial redenção, além de explorar como o bitcoin está a resgatar os males do nosso sistema monetário corrupto e o quanto a transição em curso para o dinheiro sólido é uma fonte de esperança para um mundo fraturado.',
-    ],
-    authorDescription: [
-      '**Derek Waltchack** descobriu o Bitcoin em 2015 e tem estado obcecado desde então. Em 2005 co-fundou Shannon Waltchack, uma empresa de corretagem e investimento imobiliário comercial de serviço completo. Derek cresceu no coração da Igreja de Belmont de Tennessee-Nashville, no coração do Cinturão Bíblico.',
-      '**Gabe Higgins** é um empresário, músico, tecnólogo e libertário. Cresceu numa igreja Pentecostal em Clearwater, Florida, e, na sua adolescência, começou a tocar bateria e guitarra na banda dos jovens, de louvor e adoração. Gabe continua a servir como músico na sua atual igreja matriz, bem como na sua banda de hard rock baseada na fé. Ele descobriu o Bitcoin em finais de 2012 logo após ter aprendido com o Dr. Ron Paul sobre o papel da banca central na política monetária.',
-      '**George Mekhail** é um bitcoiner e antigo Pastor Executivo. Nascido no Cairo, Egipto, cresceu servindo como diácono na Igreja Coptic Orthodox. Foi cofundador de uma organização chamada Church Clarity, que insiste que os pastores sejam francos nas suas políticas, quer teologicamente conservadoras, quer progressistas.',
-      "**Jimmy Song** é um programador de Bitcoin e libertariano cristão. Nasceu em Seul, Coreia do Sul, onde a sua devota avó materna lhe apresentou o Evangelho. Frequentou uma grande variedade de igrejas, desde Vineyard e Hillsong até Presbyterian e Southern Baptist, e muitas entre elas. Escreveu dois outros livros, Programming Bitcoin, publicado por O'Reilly e The Little Bitcoin Book, com edição de autor.",
-      '**J. M. Bush** é um plantador de igrejas atualmente a servir em Montevideo, Uruguai. Cresceu numa família cristã e chegou à fé ainda jovem, mas só nos seus últimos anos de liceu é que veio a abraçar as implicações do Senhorio de Cristo sobre todas as coisas. O estudo da filosofia económica acabou por levá-lo para a toca do coelho Bitcoin.',
-      '**Julia Tourianski** é uma comentadora política e YouTuber. Bitcoin cativou o seu interesse porque se alinhou com as suas crenças económicas e políticas. Ela escreveu The Declaration of Bitcoin’s Indepedence e continua a falar sobre a natureza vital desta tecnologia.',
-      '**Lyle Pratt** é um investidor, programador, empresário e um “nerd” da economia. Cresceu em igrejas baptistas do Sul, mas desde então migrou para outros espaços. É um membro fundador da Igreja Paz de Cristo em Round Rock, TX, onde a sua esposa, Aurelia, serve como seu pastor principal.',
-      '**Robert Breedlove** é um empresário, escritor e filósofo com foco em Bitcoin. Foi criado no Tennessee, frequentando igrejas baptistas do Sul, mas passou a maior parte da sua vida espiritual ainda agnóstico. Através das suas explorações na proverbial "toca do coelho Bitcoin", Robert viu-se familiarizado com o cristianismo aos 33 anos de idade. Robert considera-se um Maximalista da Liberdade e acredita ter encontrado o trabalho da sua vida ao redor do Bitcoin dando o seu contributo para a separar o dinheiro do estado.',
-    ],
-    cover: gracasADeus,
-    storeUrl:
-      'https://shop.freemadeira.org/products/gracas-a-deus-pelo-bitcoin',
-    amazonUrl:
-      'https://www.amazon.es/dp/B0DTP6Y67B?ref=cm_sw_r_ffobk_cp_ud_dp_WJ0FRWTT9R3RBTS6WXQK&ref_=cm_sw_r_ffobk_cp_ud_dp_WJ0FRWTT9R3RBTS6WXQK&social_share=cm_sw_r_ffobk_cp_ud_dp_WJ0FRWTT9R3RBTS6WXQK&bestFormat=true',
-  },
-  {
-    id: 3,
     title: 'A Tese da Ascensão do Bitcoin',
     description: [
       '**A Tese da Ascensão do Bitcoin** é uma leitura informativa e cativante, tanto para o recém-chegado como para o entusiasta de longa data do Bitcoin. Boyapati faz um caso convincente para o Bitcoin através de uma rápida visita ao cenário histórico do dinheiro, às propriedades de diferentes tipos de dinheiro e à razão pela qual o Bitcoin é a melhor forma de dinheiro e reserva de valor do mundo, potencialmente destinada a deslocar todas as outras.',
@@ -62,7 +23,7 @@ const books = [
       'https://www.amazon.es/dp/9893554020?ref=cm_sw_r_ffobk_cp_ud_dp_T0Z8KEJ0GWX7XT6EC07M&ref_=cm_sw_r_ffobk_cp_ud_dp_T0Z8KEJ0GWX7XT6EC07M&social_share=cm_sw_r_ffobk_cp_ud_dp_T0Z8KEJ0GWX7XT6EC07M&bestFormat=true',
   },
   {
-    id: 4,
+    id: 2,
     title: 'O Preço do Amanhã',
     description: [
       '**Vivemos numa época extraordinária.** Os avanços tecnológicos estão a acontecer mais depressa do que a nossa capacidade para os compreender e, num mundo que está a avançar a um ritmo mais rápido do que podemos imaginar, não nos podemos dar ao luxo de ficar parados.',
@@ -76,6 +37,42 @@ const books = [
     storeUrl: 'https://shop.freemadeira.org/products/o-preco-do-amanha',
     amazonUrl:
       'https://www.amazon.es/dp/9895338805?ref=cm_sw_r_ffobk_cp_ud_dp_TNEPBRKRKKD1AMJH6HX2&ref_=cm_sw_r_ffobk_cp_ud_dp_TNEPBRKRKKD1AMJH6HX2&social_share=cm_sw_r_ffobk_cp_ud_dp_TNEPBRKRKKD1AMJH6HX2&bestFormat=true',
+  },
+  {
+    id: 3,
+    title: '21 Lições',
+    description: [
+      '**O que é Bitcoin?** Esta pergunta inócua é surpreendentemente difícil de responder. Bitcoin é uma rede informática, uma nova forma de dinheiro, um sistema de pagamento resistente à censura, uma revolução financeira, uma forma pacífica de protesto, e muito mais.',
+      'Mas este livro não procura responder a essa pergunta. Tenta, sim, responder a outra pergunta, mais pessoal: **O que aprendi eu com Bitcoin?**',
+      'As **21 Lições** estão estruturadas em grupos de sete, resultando em três capítulos. Cada um analisa a Bitcoin por uma lente diferente, extraindo as que podem ser aprendidas através da inspeção desta estranha rede a partir de um ângulo diferente.',
+    ],
+    authorDescription: [
+      'Gigi é um bitcoiner e engenheiro de software, escreve palavras e código para Bitcoin. O seu primeiro livro, 21 Lições, é um dos livros mais recomendados entre os bitcoiners. Lançou vários projectos no espaço Bitcoin e está actualmente a trabalhar no seu segundo livro, 21 Ways. O seu foco principal é a privacidade, segurança, software livre, e educação.',
+    ],
+    cover: vinteUmaLicoes,
+    storeUrl: 'https://shop.freemadeira.org/products/21-licoes',
+    amazonUrl:
+      'https://www.amazon.es/dp/B0DTPG36QL?ref=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&ref_=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&social_share=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&bestFormat=true',
+  },
+  {
+    id: 4,
+    title: 'Tudo Dividido por 21 Milhões',
+    description: [
+      'Estamos todos acorrentados à seta implacável do tempo. Nascemos, vivemos e envelhecemos. Pelo menos é isso que esperamos que aconteça. Depois morremos.',
+      'Nenhum de nós, humanos, é milionário em termos de horas, mas sacrificamos o nosso bem mais valioso e escasso apenas para nos mantermos vivos na roda do hamster mais um dia.',
+      'Na tentativa de poupar tempo, Satoshi deparou-se com a descoberta de um novo elemento, sem peso e absolutamente escasso. O travão para todo e qualquer ladrão de tempo. Elemento zero. Bitcoin.',
+      'O limite de quantidade do Bitcoin é o objeto imóvel que nos permite a todos tornarmo-nos uma força imparável.',
+      '“Porque a verdade é que o sistema somos nós. Cada uma das nossas ações de escolha, por sua vez, muda o nosso mundo. É assim que as ideias que outrora não conseguíamos entender se tornam realidade. Uma pessoa de cada vez.”',
+      '— Do prefácio de Jeff Booth',
+    ],
+    authorDescription: [
+      "**Knut Svanholm** is a Bitcoin author, educator, and armchair philosopher. His first work, 'Bitcoin: Sovereignty through Mathematics,' is widely regarded as a classic in the space, earning recognition as a recommended read on numerous educational platforms, including MicroStrategy's Bitcoin site hope.com. Knut is credited with coining the popular meme 'Everything Divided by 21 Million,' a phrase that encapsulates the scarcity and mathematical principles underpinning Bitcoin. Knut is also the host of The Bitcoin Infinity Show.",
+    ],
+    cover: tudoDividido21Milhoes,
+    storeUrl:
+      'https://shop.freemadeira.org/products/bitcoin-tudo-dividido-por-21-milhoes',
+    amazonUrl:
+      'https://www.amazon.es/dp/9893554063?ref=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&ref_=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&social_share=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&bestFormat=tru',
   },
   {
     id: 5,
@@ -100,23 +97,26 @@ const books = [
   },
   {
     id: 6,
-    title: 'Tudo Dividido por 21 Milhões',
+    title: 'Graças a Deus pelo Bitcoin',
     description: [
-      'Estamos todos acorrentados à seta implacável do tempo. Nascemos, vivemos e envelhecemos. Pelo menos é isso que esperamos que aconteça. Depois morremos.',
-      'Nenhum de nós, humanos, é milionário em termos de horas, mas sacrificamos o nosso bem mais valioso e escasso apenas para nos mantermos vivos na roda do hamster mais um dia.',
-      'Na tentativa de poupar tempo, Satoshi deparou-se com a descoberta de um novo elemento, sem peso e absolutamente escasso. O travão para todo e qualquer ladrão de tempo. Elemento zero. Bitcoin.',
-      'O limite de quantidade do Bitcoin é o objeto imóvel que nos permite a todos tornarmo-nos uma força imparável.',
-      '“Porque a verdade é que o sistema somos nós. Cada uma das nossas ações de escolha, por sua vez, muda o nosso mundo. É assim que as ideias que outrora não conseguíamos entender se tornam realidade. Uma pessoa de cada vez.”',
-      '— Do prefácio de Jeff Booth',
+      'O dinheiro faz parte do nosso dia-a-dia. Ganhamo-lo, gastamo-lo e poupamo-lo. Veneramo-lo e confiamos nele para suprir as nossas necessidades. Embora muito já tenha sido escrito sobre o poder, o perigo e a gestão do dinheiro, pouco foi ainda escrito sobre o que ele é, bem como da sua moralidade. Essa lacuna de informação tem sido aproveitada para enriquecer alguns privilegiados, escravizar milhões e introduzir desordem e divisão em todo o mundo. Como é que isto aconteceu e o que podemos fazer para o remediar?',
+      '**Graças a Deus pelo Bitcoin** analisa as formas pelas quais o sistema monetário atual se encontra quebrado e o que pode ser feito para consertá-lo. Este trabalho examina a criação de dinheiro e a sua corrupção e potencial redenção, além de explorar como o bitcoin está a resgatar os males do nosso sistema monetário corrupto e o quanto a transição em curso para o dinheiro sólido é uma fonte de esperança para um mundo fraturado.',
     ],
     authorDescription: [
-      "**Knut Svanholm** is a Bitcoin author, educator, and armchair philosopher. His first work, 'Bitcoin: Sovereignty through Mathematics,' is widely regarded as a classic in the space, earning recognition as a recommended read on numerous educational platforms, including MicroStrategy's Bitcoin site hope.com. Knut is credited with coining the popular meme 'Everything Divided by 21 Million,' a phrase that encapsulates the scarcity and mathematical principles underpinning Bitcoin. Knut is also the host of The Bitcoin Infinity Show.",
+      '**Derek Waltchack** descobriu o Bitcoin em 2015 e tem estado obcecado desde então. Em 2005 co-fundou Shannon Waltchack, uma empresa de corretagem e investimento imobiliário comercial de serviço completo. Derek cresceu no coração da Igreja de Belmont de Tennessee-Nashville, no coração do Cinturão Bíblico.',
+      '**Gabe Higgins** é um empresário, músico, tecnólogo e libertário. Cresceu numa igreja Pentecostal em Clearwater, Florida, e, na sua adolescência, começou a tocar bateria e guitarra na banda dos jovens, de louvor e adoração. Gabe continua a servir como músico na sua atual igreja matriz, bem como na sua banda de hard rock baseada na fé. Ele descobriu o Bitcoin em finais de 2012 logo após ter aprendido com o Dr. Ron Paul sobre o papel da banca central na política monetária.',
+      '**George Mekhail** é um bitcoiner e antigo Pastor Executivo. Nascido no Cairo, Egipto, cresceu servindo como diácono na Igreja Coptic Orthodox. Foi cofundador de uma organização chamada Church Clarity, que insiste que os pastores sejam francos nas suas políticas, quer teologicamente conservadoras, quer progressistas.',
+      "**Jimmy Song** é um programador de Bitcoin e libertariano cristão. Nasceu em Seul, Coreia do Sul, onde a sua devota avó materna lhe apresentou o Evangelho. Frequentou uma grande variedade de igrejas, desde Vineyard e Hillsong até Presbyterian e Southern Baptist, e muitas entre elas. Escreveu dois outros livros, Programming Bitcoin, publicado por O'Reilly e The Little Bitcoin Book, com edição de autor.",
+      '**J. M. Bush** é um plantador de igrejas atualmente a servir em Montevideo, Uruguai. Cresceu numa família cristã e chegou à fé ainda jovem, mas só nos seus últimos anos de liceu é que veio a abraçar as implicações do Senhorio de Cristo sobre todas as coisas. O estudo da filosofia económica acabou por levá-lo para a toca do coelho Bitcoin.',
+      '**Julia Tourianski** é uma comentadora política e YouTuber. Bitcoin cativou o seu interesse porque se alinhou com as suas crenças económicas e políticas. Ela escreveu The Declaration of Bitcoin’s Indepedence e continua a falar sobre a natureza vital desta tecnologia.',
+      '**Lyle Pratt** é um investidor, programador, empresário e um “nerd” da economia. Cresceu em igrejas baptistas do Sul, mas desde então migrou para outros espaços. É um membro fundador da Igreja Paz de Cristo em Round Rock, TX, onde a sua esposa, Aurelia, serve como seu pastor principal.',
+      '**Robert Breedlove** é um empresário, escritor e filósofo com foco em Bitcoin. Foi criado no Tennessee, frequentando igrejas baptistas do Sul, mas passou a maior parte da sua vida espiritual ainda agnóstico. Através das suas explorações na proverbial "toca do coelho Bitcoin", Robert viu-se familiarizado com o cristianismo aos 33 anos de idade. Robert considera-se um Maximalista da Liberdade e acredita ter encontrado o trabalho da sua vida ao redor do Bitcoin dando o seu contributo para a separar o dinheiro do estado.',
     ],
-    cover: tudoDividido21Milhoes,
+    cover: gracasADeus,
     storeUrl:
-      'https://shop.freemadeira.org/products/bitcoin-tudo-dividido-por-21-milhoes',
+      'https://shop.freemadeira.org/products/gracas-a-deus-pelo-bitcoin',
     amazonUrl:
-      'https://www.amazon.es/dp/9893554063?ref=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&ref_=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&social_share=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&bestFormat=tru',
+      'https://www.amazon.es/dp/B0DTP6Y67B?ref=cm_sw_r_ffobk_cp_ud_dp_WJ0FRWTT9R3RBTS6WXQK&ref_=cm_sw_r_ffobk_cp_ud_dp_WJ0FRWTT9R3RBTS6WXQK&social_share=cm_sw_r_ffobk_cp_ud_dp_WJ0FRWTT9R3RBTS6WXQK&bestFormat=true',
   },
 ];
 
