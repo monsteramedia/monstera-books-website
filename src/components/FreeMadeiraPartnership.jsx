@@ -1,5 +1,5 @@
 import Image from "next/image";
-import freeMadeira from '@/images/free-madeira-monstera-books.avif';
+import freeMadeira from '@/images/free-monstera.svg';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
 
