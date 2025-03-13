@@ -1,15 +1,9 @@
 import alemDaDemocracia from '@/images/books/para-alem-da-democracia.jpg';
-import alemDaDemocraciaLateral from '@/images/books/para-alem-da-democracia-lateral.png';
 import gracasADeus from '@/images/books/gracas-a-deus-pelo-bitcoin.jpg';
-import gracasADeusLateral from '@/images/books/gracas-a-deus-pelo-bitcoin-lateral.png';
 import precoAmanha from '@/images/books/o-preco-do-amanha.jpg';
-import precoAmanhaLateral from '@/images/books/o-preco-do-amanha-lateral.png';
 import teseAscencao from '@/images/books/a-tese-da-ascencao-do-bitcoin.jpg';
-import teseAscencaoLateral from '@/images/books/a-tese-da-ascencao-do-bitcoin-lateral.png';
 import tudoDividido21Milhoes from '@/images/books/tudo-dividido-por-21-milhoes.jpg';
-import tudoDividido21MilhoesLateral from '@/images/books/tudo-dividido-por-21-milhoes-lateral.png';
 import vinteUmaLicoes from '@/images/books/21-licoes.jpg';
-import vinteUmaLicoesLateral from '@/images/books/21-licoes-lateral.png';
 
 const books = [
   {
@@ -24,7 +18,6 @@ const books = [
       'Gigi é um bitcoiner e engenheiro de software, escreve palavras e código para Bitcoin. O seu primeiro livro, 21 Lições, é um dos livros mais recomendados entre os bitcoiners. Lançou vários projectos no espaço Bitcoin e está actualmente a trabalhar no seu segundo livro, 21 Ways. O seu foco principal é a privacidade, segurança, software livre, e educação.',
     ],
     cover: vinteUmaLicoes,
-    lateralCover: vinteUmaLicoesLateral,
     storeUrl: 'https://shop.freemadeira.org/products/21-licoes',
     amazonUrl:
       'https://www.amazon.es/dp/B0DTPG36QL?ref=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&ref_=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&social_share=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&bestFormat=true',
@@ -47,7 +40,6 @@ const books = [
       '**Robert Breedlove** é um empresário, escritor e filósofo com foco em Bitcoin. Foi criado no Tennessee, frequentando igrejas baptistas do Sul, mas passou a maior parte da sua vida espiritual ainda agnóstico. Através das suas explorações na proverbial "toca do coelho Bitcoin", Robert viu-se familiarizado com o cristianismo aos 33 anos de idade. Robert considera-se um Maximalista da Liberdade e acredita ter encontrado o trabalho da sua vida ao redor do Bitcoin dando o seu contributo para a separar o dinheiro do estado.',
     ],
     cover: gracasADeus,
-    lateralCover: gracasADeusLateral,
     storeUrl:
       'https://shop.freemadeira.org/products/gracas-a-deus-pelo-bitcoin',
     amazonUrl:
@@ -64,7 +56,6 @@ const books = [
       'Nascido e criado na Austrália, **Vijay Boyapati** mudou-se para os Estados Unidos em 2000 para frequentar um Doutoramento em Ciências da Computação. Em vez de se inscrever no doutoramento, Boyapati acabou numa pequena startup chamada Google, onde passou vários anos a usar a sua formação em aprendizagem automática para melhorar os algoritmos de classificação usados na Google News. Em 2007, Boyapati deixou o seu emprego bem pago para trabalhar numa campanha popular para as eleições presidenciais de 2008, ajudando a arrecadar milhões de dólares e a trazer centenas de voluntários a New Hampshire para apoiar Ron Paul. Em 2011, Boyapati descobriu o bitcoin e empreendeu uma fantástica viagem para tentar compreender como é que uma nova forma de dinheiro baseada na internet, sem o suporte de qualquer bem físico nem a garantia de qualquer governo, poderia ter algum tipo de valor económico. Com uma formação base em economia austríaca, Boyapati escreveu **A tese da ascensão do Bitcoin** em formato de artigo longo em 2017, oferecendo um enquadramento económico para que qualquer leigo na matéria pudesse compreender o funcionamento do bitcoin.',
     ],
     cover: teseAscencao,
-    lateralCover: teseAscencaoLateral,
     storeUrl:
       'https://shop.freemadeira.org/products/a-tese-da-ascensao-do-bitcoin',
     amazonUrl:
@@ -82,7 +73,6 @@ const books = [
       '**Jeff Booth** é um líder visionário que viveu na vanguarda da transição tecnológica durante 20 anos. Liderou a BuildDirect – uma empresa tecnológica que tinha como missão simplificar o setor da construção – ao longo de quase duas décadas, passando pelo colapso do setor das dotcom, pela crise financeira de 2008 e por diversas ondas de disrupção tecnológica.Jeff foi mencionado na Forbes, TechCrunch, Inc.com, The Globe and Mail, BNN, Fast Company, Entrepreneur, Bloomberg, TIME e The Wall Street Journal. Em 2015, foi nomeado Pessoa do Ano pela BC Technology Industry Association’s (BCTIA) e em 2016 a Goldman Sachs classificou-o entre os seus 100 empreendedores mais intrigantes.',
     ],
     cover: precoAmanha,
-    lateralCover: precoAmanhaLateral,
     storeUrl: 'https://shop.freemadeira.org/products/o-preco-do-amanha',
     amazonUrl:
       'https://www.amazon.es/dp/9895338805?ref=cm_sw_r_ffobk_cp_ud_dp_TNEPBRKRKKD1AMJH6HX2&ref_=cm_sw_r_ffobk_cp_ud_dp_TNEPBRKRKKD1AMJH6HX2&social_share=cm_sw_r_ffobk_cp_ud_dp_TNEPBRKRKKD1AMJH6HX2&bestFormat=true',
@@ -104,7 +94,6 @@ const books = [
       '**Karel Beckman** é escritor e jornalista. É fundador e editor-chefe da publicação digital independente Energy Post (www.energypost.eu). Antes disso, trabalhou como jornalista, no jornal financeiro neerlandês Financieele Dagblad. O seu site pessoal é www.charlieville.nl.',
     ],
     cover: alemDaDemocracia,
-    lateralCover: alemDaDemocraciaLateral,
     storeUrl: 'https://shop.freemadeira.org/products/para-alem-da-democracia',
     amazonUrl:
       'https://www.amazon.es/dp/9895338899?ref=cm_sw_r_ffobk_cp_ud_dp_XERVVPWX1AR0DEYKQ1RY_1&ref_=cm_sw_r_ffobk_cp_ud_dp_XERVVPWX1AR0DEYKQ1RY_1&social_share=cm_sw_r_ffobk_cp_ud_dp_XERVVPWX1AR0DEYKQ1RY_1&bestFormat=true',
@@ -124,11 +113,10 @@ const books = [
       "**Knut Svanholm** is a Bitcoin author, educator, and armchair philosopher. His first work, 'Bitcoin: Sovereignty through Mathematics,' is widely regarded as a classic in the space, earning recognition as a recommended read on numerous educational platforms, including MicroStrategy's Bitcoin site hope.com. Knut is credited with coining the popular meme 'Everything Divided by 21 Million,' a phrase that encapsulates the scarcity and mathematical principles underpinning Bitcoin. Knut is also the host of The Bitcoin Infinity Show.",
     ],
     cover: tudoDividido21Milhoes,
-    lateralCover: tudoDividido21MilhoesLateral,
     storeUrl:
       'https://shop.freemadeira.org/products/bitcoin-tudo-dividido-por-21-milhoes',
     amazonUrl:
-      'https://www.amazon.es/dp/9893554063?ref=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&ref_=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&social_share=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&bestFormat=true',
+      'https://www.amazon.es/dp/9893554063?ref=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&ref_=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&social_share=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&bestFormat=tru',
   },
 ];
 
