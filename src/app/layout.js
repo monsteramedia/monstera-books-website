@@ -10,6 +10,35 @@ export const metadata = {
   title: 'Monstera Books',
   description:
     'Livros em português sobre economia, liberdade, literacia financeira, tecnologia e Bitcoin.',
+  keywords:
+    'monstera, books, bitcoin, livros, liberdade, economia, tecnologia, free, madeira',
+  canonical: 'https://www.monsterabooks.com/',
+  openGraph: {
+    title: 'Monstera Books',
+    description:
+      'Livros em português sobre economia, liberdade, literacia financeira, tecnologia e Bitcoin.',
+    url: 'https://www.monsterabooks.com/',
+    siteName: 'Monstera Books',
+    images: [
+      {
+        url: '/og-monstera.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Monstera Books',
+      },
+    ],
+    locale: 'pt_PT',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@monsterabtc',
+    creator: '@monsterabtc',
+    title: 'Monstera Books',
+    description:
+      'Livros em português sobre economia, liberdade, literacia financeira, tecnologia e Bitcoin.',
+    image: '/og-monstera.jpg',
+  },
 };
 
 export default function RootLayout({ children }) {
