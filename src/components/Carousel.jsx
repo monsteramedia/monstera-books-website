@@ -12,6 +12,7 @@ export function Carousel({ className }) {
   );
   const [showModal, setShowModal] = useState(false);
   const [x, setX] = useState(0);
+  const [showClickCue, setShowClickCue] = useState(false);
 
   const scrollContainerRef = useRef(null);
   const [isDown, setIsDown] = useState(false);
@@ -19,6 +20,7 @@ export function Carousel({ className }) {
   const [scrollLeft, setScrollLeft] = useState(0);
   const [initialMouseX, setInitialMouseX] = useState(0);
   const dragThreshold = 5; // Threshold for drag detection
+  const horizontalShiftCue = -150;
 
   const handleMouseDown = (event) => {
     setIsDown(true);
@@ -56,14 +58,29 @@ export function Carousel({ className }) {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setX(-40);
-      const timer = setTimeout(() => {
-        setX(0);
-      }, 1000);
-    }, 2000);
+    const shiftTimer = setTimeout(() => {
+      setX(horizontalShiftCue);
 
-    return () => clearTimeout(timer);
+      const resetPositionTimer = setTimeout(() => {
+        setX(0);
+
+        const showCueTimer = setTimeout(() => {
+          setShowClickCue(true);
+
+          const resetCueTimer = setTimeout(() => {
+            setShowClickCue(false);
+          }, 1000);
+
+          return () => clearTimeout(resetCueTimer);
+        }, 1000);
+
+        return () => clearTimeout(showCueTimer);
+      }, 1000);
+
+      return () => clearTimeout(resetPositionTimer);
+    }, 1000);
+
+    return () => clearTimeout(shiftTimer);
   }, []);
 
   const handleKeyDown = (event, book) => {
@@ -81,7 +98,7 @@ export function Carousel({ className }) {
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
       className={classNames(
-        'h-[calc(100vh-144px)] overflow-x-auto scrollbar-hide whitespace-nowrap',
+        'h-[calc(100vh-128px)] sm:h-[calc(100vh-144px)] overflow-x-auto scrollbar-hide whitespace-nowrap',
         className
       )}
     >
@@ -100,8 +117,8 @@ export function Carousel({ className }) {
             }}
             onKeyDown={(event) => handleKeyDown(event, book)}
             className={classNames(
-              'inline-block h-full w-auto shadow-sm',
-              isDown ? 'cursor-grabbing' : 'cursor-grab',
+              'group relative inline-block h-full w-auto shadow-sm',
+              isDown ? 'cursor-grabbing' : 'cursor-grab'
             )}
           >
             <Image
@@ -111,6 +128,16 @@ export function Carousel({ className }) {
                 'inline-block h-full w-auto shadow-sm undragable'
               )}
             />
+            <div
+              className={classNames(
+                'flex items-center justify-center absolute inset-0 bg-black sm:opacity-0 sm:group-hover:opacity-50 transition-opacity duration-300 pointer-events-none',
+                showClickCue ? 'opacity-50' : 'opacity-0'
+              )}
+            >
+              <p className='text-white font-medium'>
+                Pressiona para ver detalhes do livro
+              </p>
+            </div>
           </button>
         ))}
       </motion.div>
