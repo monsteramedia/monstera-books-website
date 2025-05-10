@@ -69,7 +69,7 @@ export function Carousel({ className }) {
 
           const resetCueTimer = setTimeout(() => {
             setShowClickCue(false);
-          }, 1000);
+          }, 2000);
 
           return () => clearTimeout(resetCueTimer);
         }, 1000);
