@@ -5,7 +5,7 @@ import { Container } from '@/components/Container';
 
 export function FreeMadeiraPartnership() {
   return (
-    <Container className='h-[calc(100vh-144px)] mx-auto w-screen flex flex-col items-center justify-center text-center gap-8 md:gap-6'>
+    <Container className='min-h-[calc(100vh-144px)] mx-auto w-screen flex flex-col items-center justify-center text-center gap-8 md:gap-6 py-20'>
       <Image
         src={freeMadeira}
         alt='FREE Madeira and Monstera Books'
@@ -13,10 +13,10 @@ export function FreeMadeiraPartnership() {
       />
       <div className="flex flex-col gap-4 md:gap-6">
         <p className='text-black text-xl md:text-2xl'>
-          Tudo sobre Bitcoin, pela FREE Madeira e Monstera Books
+          Tudo sobre Bitcoin, pela FREE Madeira e Monstera Books.
         </p>
         <p className='text-grey font-light text-sm md:text-base'>
-          De livros a hardware, roupa a acessórios, encontre aqui os seus
+          De livros a hardware, roupa a acessórios, encontra aqui os teus
           essenciais de Bitcoin.
         </p>
       </div>
