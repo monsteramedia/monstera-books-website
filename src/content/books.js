@@ -40,6 +40,7 @@ const books = [
 		],
 		cover: oIndividuoSoberano,
 		storeUrl: "https://shop.freemadeira.org/products/o-individuo-soberano",
+		amazonUrl: "https://www.amazon.es/-/pt/dp/B0H4DBS734",
 	},
 	{
 		id: 3,
@@ -57,6 +58,7 @@ const books = [
 		],
 		cover: repressaoOculta,
 		storeUrl: "https://shop.freemadeira.org/products/repressao-oculta",
+		amazonUrl: "https://www.amazon.es/-/pt/dp/9893632102",
 	},
 	{
 		id: 4,
@@ -71,8 +73,7 @@ const books = [
 		],
 		cover: precoAmanha,
 		storeUrl: "https://shop.freemadeira.org/products/o-preco-do-amanha",
-		amazonUrl:
-			"https://www.amazon.es/dp/9895338805?ref=cm_sw_r_ffobk_cp_ud_dp_TNEPBRKRKKD1AMJH6HX2&ref_=cm_sw_r_ffobk_cp_ud_dp_TNEPBRKRKKD1AMJH6HX2&social_share=cm_sw_r_ffobk_cp_ud_dp_TNEPBRKRKKD1AMJH6HX2&bestFormat=true",
+		amazonUrl: "https://www.amazon.es/dp/9895338805",
 	},
 	{
 		id: 5,
@@ -89,8 +90,7 @@ const books = [
 		cover: teseAscencao,
 		storeUrl:
 			"https://shop.freemadeira.org/products/a-tese-da-ascensao-do-bitcoin",
-		amazonUrl:
-			"https://www.amazon.es/dp/9893554020?ref=cm_sw_r_ffobk_cp_ud_dp_T0Z8KEJ0GWX7XT6EC07M&ref_=cm_sw_r_ffobk_cp_ud_dp_T0Z8KEJ0GWX7XT6EC07M&social_share=cm_sw_r_ffobk_cp_ud_dp_T0Z8KEJ0GWX7XT6EC07M&bestFormat=true",
+		amazonUrl: "https://www.amazon.es/dp/9893554020",
 	},
 	{
 		id: 6,
@@ -104,8 +104,7 @@ const books = [
 		],
 		cover: vinteUmaLicoes,
 		storeUrl: "https://shop.freemadeira.org/products/21-licoes",
-		amazonUrl:
-			"https://www.amazon.es/dp/B0DTPG36QL?ref=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&ref_=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&social_share=cm_sw_r_ffobk_cp_ud_dp_EB7Y28VKDG82PXRRZKPW&bestFormat=true",
+		amazonUrl: "https://www.amazon.es/dp/B0DTPG36QL",
 	},
 	{
 		id: 7,
@@ -124,8 +123,7 @@ const books = [
 		cover: tudoDividido21Milhoes,
 		storeUrl:
 			"https://shop.freemadeira.org/products/bitcoin-tudo-dividido-por-21-milhoes",
-		amazonUrl:
-			"https://www.amazon.es/dp/9893554063?ref=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&ref_=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&social_share=cm_sw_r_ffobk_cp_ud_dp_ZA5TXKJKPW5Z1HAP728T&bestFormat=tru",
+		amazonUrl: "https://www.amazon.es/dp/9893554063",
 	},
 	{
 		id: 8,
@@ -146,8 +144,7 @@ const books = [
 		],
 		cover: alemDaDemocracia,
 		storeUrl: "https://shop.freemadeira.org/products/para-alem-da-democracia",
-		amazonUrl:
-			"https://www.amazon.es/dp/9895338899?ref=cm_sw_r_ffobk_cp_ud_dp_XERVVPWX1AR0DEYKQ1RY_1&ref_=cm_sw_r_ffobk_cp_ud_dp_XERVVPWX1AR0DEYKQ1RY_1&social_share=cm_sw_r_ffobk_cp_ud_dp_XERVVPWX1AR0DEYKQ1RY_1&bestFormat=true",
+		amazonUrl: "https://www.amazon.es/dp/9895338899",
 	},
 	{
 		id: 9,
@@ -169,8 +166,7 @@ const books = [
 		cover: gracasADeus,
 		storeUrl:
 			"https://shop.freemadeira.org/products/gracas-a-deus-pelo-bitcoin",
-		amazonUrl:
-			"https://www.amazon.es/dp/B0DTP6Y67B?ref=cm_sw_r_ffobk_cp_ud_dp_WJ0FRWTT9R3RBTS6WXQK&ref_=cm_sw_r_ffobk_cp_ud_dp_WJ0FRWTT9R3RBTS6WXQK&social_share=cm_sw_r_ffobk_cp_ud_dp_WJ0FRWTT9R3RBTS6WXQK&bestFormat=true",
+		amazonUrl: "https://www.amazon.es/dp/B0DTP6Y67B",
 	},
 ];
 
